@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Variáveis em PHP</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de PHP</h1>
+    </header>
+    <main>
+        <h2><span>Variáveis</span></h2>
+        <h3>O que são variáveis?</h3>
+        <p>Variáveis são espaços na memória do computador que podem conter valores. Variáveis simples armazenam apenas um valor de cada vez, dependendo do seu tipo.</p>
+        <h3>Regras de nomeação</h3>
+        <p>Todas as variáveis no PHP possuem um $ na frente e seguem as mesmas regras de construção de nomes de identificadores:</p>
+        <ul>
+            <li>Devem começar com uma letra (após o $)</li>
+            <li>Podem conter letras e números</li>
+            <li>Não podem conter caracteres acentuados</li>
+            <li>Não podem conter símbolos como % # * & etc (exceto _ e $)</li>
+        </ul>
+        <p><span>OBS: O PHP faz a diferenciação entre as letras maiúsculas e minúsculas, por isso recomendamos que você utilize apenas identificadores com letras minúsculas em seus scripts PHP.</span></p>
+        <h3>Declaração de variáveis</h3>
+        <p>No PHP não existe a necessidade de declarar variáveis. Os tipos serão atribuídos automaticamente de acordo com o valor que a variável receber. Esse processo é conhecido como coerção. Isso pode ser até empolgante no início, mas é preciso prestar bastante atenção para não fazer nada errado.</p>
+        <h3>Typecast</h3>
+        <p> Você pode forçar um tipo primitivo a uma variável por TYPECAST, utilizando (int) (real) (float) (double) (string) antes do valor na atribuição. Não existe typecast para variáveis lógicas. Os valores booleanos são considerados números, sendo o valor 1 atribuído para true e vazio para false.</p>
+        <h3>Atribuição de valores</h3>
+        <p>Atribuir valor é colocar um conteúdo em uma variável. Utilizamos o operador de atribuição = para realizar essa tarefa. Veja alguns exemplos:</p>
+        <code>
+<pre>
+$idade = 15;
+
+$salario = 1500.25;
+
+$nome = “Gustavo”;
+
+$casado = true;
+</pre>
+        </code>
+        <h3>Concatenação de valores</h3>
+        <p>Concatenar é juntar valores para tratá-los em conjunto. A concatenação em PHP é realizada pelo operador ponto (.) como no trecho de código a seguir.</p>
+        <code>
+<pre>
+$idade = 18;
+
+$nome = “Maria”;
+
+echo $nome . “ tem “ . $idade . “ anos “; 
+</pre>
+        </code>
+        <p>No script acima, será exibido “Maria tem 18 anos”, já que acontecerão concatenações.</p>
+        <p> Porém, já que os identificadores PHP começam com um $, é possível realizar o comando de saída utilizando um modo simplificado:</p>
+        <code>
+<pre>
+echo “$nome tem $idade anos”;
+</pre>
+        </code>
+        <p>O comando acima pode ser usado sem problemas, contanto que sejam utilizadas aspas duplas.</p>
+    </main>
+    <footer>
+        <p>Copyright 2023</p> 
+        <p>Matheus Ramos de Lima & Curso em Vídeo</p>
+    </footer>
+</body>
+</html>
