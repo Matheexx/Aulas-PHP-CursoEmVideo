@@ -28,14 +28,18 @@ p {
     font-size: 20px;
 }
 
-ul {
+ul, ol {
     margin: 10px;
     margin-left: 25px;
     font-size: 18px;
 }
 
-code pre {
+code {
     font-size: 18px;
+    color: #696969;
+}
+
+code pre {
     padding: 5px;
     margin: 10px;
 }

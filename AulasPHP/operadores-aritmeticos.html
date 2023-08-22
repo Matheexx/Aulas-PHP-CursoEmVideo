@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operadores Aritméticos em PHP</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de PHP</h1>
+    </header>
+    <main>
+        <h2><span>Operadores Aritméticos</span></h2>
+        <h3>Lista dos operadores aritméticos</h3>
+        <ul>
+            <li><span>+</span> é o operador de <span>adição</span></li>
+            <li><span>–</span> é o operador de <span>subtração</span></li>
+            <li><span>*</span> é o operador de <span>multiplicação</span></li>
+            <li><span>/</span> é o operador de <span>divisão Real</span></li>
+            <li><span>%</span> é o operador de <span>módulo (resto da divisão)</span></li>
+        </ul>
+        <h3>Exemplo de código usando o operador de adição (+)</h3>
+
+<code><pre>
+$n1 = 3;
+
+$n2 = 2;
+
+$s = $n1 + $n2;
+
+echo “A soma entre $n1 e $n2 é igual a $s”;
+</pre></code>
+
+        <p> O código acima vai mostrar na tela a mensagem:</p>
+        <p>A soma entre 3 e 2 é igual a 5</p>
+        <h3>Ordem de precedência dos operadores aritméticos</h3>
+        <p>Sempre em uma expressão, os operadores que serão executados são, na ordem:</p>
+        <ol>
+            <li><span>Parênteses ( )</span></li>
+            <li>Operadores de <span>multiplicação</span>, <span>divisão</span> e <span>módulo</span> <span>* / %</span></li>
+            <li>Operadores de <span>adição</span> e <span>subtração</span> <span>+ –</span></li>
+        </ol>
+        <p>Por exemplo, considerando o código a seguir:</p>
+
+<code><pre>
+$media = $nota1 + $nota2 / 2;
+</pre></code>
+
+        <p>A média será calculada de maneira errada, já que segundo a ordem de precedência, a divisão será feita antes. O correto seria escrever:</p>
+
+<code><pre>
+$media = ($nota1 + $nota2) / 2;
+</pre></code>
+        <h3>Obtendo valores da URL</h3>
+        <p>Vamos analisar a URL abaixo:</p>
+        <p style="text-decoration: underline; margin: 5px;">http://localhost/meusite/primeirosite.php?a=5&b=2</p>
+        <p>No link acima, o arquivo primeirosite.php está sendo chamado dentro da pasta meusite do servidor local. Na linha, serão passados dois valores: <span>a</span> valendo <span>5</span> e <span>b</span> valendo <span>2</span>.</p>
+        <p>Para pegar esses valores no script PHP, use o código:</p>
+
+<code><pre>
+$valor1 = $_GET["a"];
+$valor2 = $_GET["b"];
+</pre></code>
+        <p>No código acima, o parâmetro a (5) passado pela URL será armazenado na variável $valor1. De maneira similar, a variável $valor2 vai conter o valor do parâmetro b (2).</p>
+        <h3>Funções matemáticas</h3>
+        <ul>
+            <li>
+                <code><span>abs()</span></code> : Retorna o valor absoluto de um número.
+                <br>
+                Ex: <code>abs(-5)</code> = 5
+            </li>
+            <li>
+                <code><span>pow()</span></code> : Calcula uma potência.
+                <br>
+                Ex: <code>pow(3,2)</code> = 3<sup>2</sup> = 9
+            </li>
+            <li>
+                <code><span>sqrt()</span></code> : Calcula a raiz quadrada de um número.
+                <br>
+                Ex: <code>sqrt(25)</code> = 5
+            </li>
+            <li>
+                <code><span>round()</span></code> : Arredonda valores.
+                <br>
+                Ex: <code>round(3.8)</code> = 4
+            </li>
+            <li>
+                <code><span>intval()</span></code> : Trunca um número. Retorna a parte inteira de um valor.
+                <br>
+                Ex: <code>intval(8.7)</code> = 8
+            </li>
+            <li>
+                <code><span>number_format()</span></code> : Formata um número Real.
+                <br>
+                Ex: <code>number_format(3258.754, 2, “,”, “.”)</code> = 3.258,75
+            </li>
+        </ul>
+        <p><span>Obs: Ainda existem os métodos <code>ceil()</code> e <code>floor()</code> para arredondamentos para cima e para baixo, respectivamente. A função <code>round()</code> vai usar as regras de arredondamento.</span></p>
+    </main>
+    <footer>
+        <p>Copyright 2023</p> 
+        <p>Matheus Ramos de Lima & Curso em Vídeo</p>
+    </footer>
+</body>
+</html>
