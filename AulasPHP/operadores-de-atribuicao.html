@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Operadores de Atribuição em PHP</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de PHP</h1>
+    </header>
+    <main>
+        <h2><span>Operadores de Atribuição</span></h2>
+        <p>Uma atribuição acontece quando queremos colocar algum valor dentro de uma variável, seja ele um número ou string estática, o resultado de uma expressão, o retorno de uma função ou o conteúdo de outra variável.</p>
+        <h3>Lista dos operadores de atribuição</h3>
+        <ul>
+            <li>Números (int, float):</li>
+            <ul>
+                <li>
+                    <span>+=</span>: Para atribuir uma variável a ela mesma mais algum valor. Ex:
+<code><pre>
+$n = 5;
+<span>$n += 1;</span> //Ou $n = $n + 1;
+echo "O valor de n é $n";
+// O valor de n é 6
+</pre></code>
+                </li>
+                <li>
+                    <span>-=</span>: Para atribuir uma variável a ela mesma menos algum valor. Ex:
+<code><pre>
+$n = 2;
+<span>$n -= 7;</span> // Ou $n = $n - 7;
+echo "O valor de n é $n";
+// O valor de n é -5
+</pre></code>
+                </li>
+                <li>
+                    <span>*=</span>: Para atribuir uma variável a ela mesma vezes algum valor. Ex:
+<code><pre>
+$n = 8
+<span>$n *= -10;</span> // Ou $n = $n * -10;
+echo "O valor de n é $n"
+// O valor de n é -80
+</pre></code>
+                </li>
+                <li>
+                    <span>/=</span>: Para atribuir uma variável a ela mesma dividida por algum valor. Ex:
+<code><pre>
+$n = 1.25;
+<span>$n /= 0.5;</span> // Ou $n = $n / 0.5;
+echo "O valor de n é $n";
+// O valor de n é 2.5
+</pre></code>
+                </li>
+                <li>
+                    <span>%=</span>: Para atribuir uma variável ao resto da divisão dela mesma por algum valor. Ex:
+<code><pre>
+$n = 13
+<span>$n %= 2;</span> // Ou $n = $n % 2;
+echo "O valor de n é $n";
+// O valor de n é 1
+</pre></code>
+                </li>
+            </ul>
+            <li>Strings (string):</li>
+            <ul>
+                <li>
+                    <span>.=</span>: Para atribuir uma variável a ela mesma mais algum valor. Ex:
+<code><pre>
+$s = "Olá "
+<span>$s .= "Mundo!";</span> // Ou $s = $s . "Mundo!";
+echo "O valor de s é $s";
+// O valor de s é Olá Mundo!
+</pre></code>
+                </li>
+            </ul>
+        </ul>
+    </main>
+    <footer>
+        <p>Copyright 2023</p>
+        <p>Matheus Ramos de Lima & Curso em Vídeo</p>
+    </footer>
+</body>
+</html>

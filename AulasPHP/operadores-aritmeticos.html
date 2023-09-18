@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Operadores Aritméticos em PHP</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <h3>Lista dos operadores aritméticos</h3>
         <ul>
             <li><span>+</span> é o operador de <span>adição</span></li>
-            <li><span>–</span> é o operador de <span>subtração</span></li>
+            <li><span>-</span> é o operador de <span>subtração</span></li>
             <li><span>*</span> é o operador de <span>multiplicação</span></li>
             <li><span>/</span> é o operador de <span>divisão Real</span></li>
             <li><span>%</span> é o operador de <span>módulo (resto da divisão)</span></li>
@@ -39,7 +39,7 @@ echo “A soma entre $n1 e $n2 é igual a $s”;
         <ol>
             <li><span>Parênteses ( )</span></li>
             <li>Operadores de <span>multiplicação</span>, <span>divisão</span> e <span>módulo</span> <span>* / %</span></li>
-            <li>Operadores de <span>adição</span> e <span>subtração</span> <span>+ –</span></li>
+            <li>Operadores de <span>adição</span> e <span>subtração</span> <span>+ -</span></li>
         </ol>
         <p>Por exemplo, considerando o código a seguir:</p>
 
@@ -52,6 +52,7 @@ $media = $nota1 + $nota2 / 2;
 <code><pre>
 $media = ($nota1 + $nota2) / 2;
 </pre></code>
+
         <h3>Obtendo valores da URL</h3>
         <p>Vamos analisar a URL abaixo:</p>
         <p style="text-decoration: underline; margin: 5px;">http://localhost/meusite/primeirosite.php?a=5&b=2</p>
@@ -62,6 +63,7 @@ $media = ($nota1 + $nota2) / 2;
 $valor1 = $_GET["a"];
 $valor2 = $_GET["b"];
 </pre></code>
+
         <p>No código acima, o parâmetro a (5) passado pela URL será armazenado na variável $valor1. De maneira similar, a variável $valor2 vai conter o valor do parâmetro b (2).</p>
         <h3>Funções matemáticas</h3>
         <ul>
@@ -99,7 +101,7 @@ $valor2 = $_GET["b"];
         <p><span>Obs: Ainda existem os métodos <code>ceil()</code> e <code>floor()</code> para arredondamentos para cima e para baixo, respectivamente. A função <code>round()</code> vai usar as regras de arredondamento.</span></p>
     </main>
     <footer>
-        <p>Copyright 2023</p> 
+        <p>Copyright 2023</p>
         <p>Matheus Ramos de Lima & Curso em Vídeo</p>
     </footer>
 </body>
